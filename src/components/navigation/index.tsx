@@ -1,4 +1,4 @@
-import { tw } from 'twind';
+import { tw } from 'twind/css';
 import { useState } from 'react';
 import Button from '@/components/button';
 
@@ -14,16 +14,20 @@ type Link = {
 
 const links = [
   {
+    label: `Introduction`,
+    href: `#VideoSec`,
+  },
+  {
     label: `Why Us?`,
-    href: `/`,
+    href: `#ListSec`,
   },
   {
     label: `Policies`,
-    href: `/`,
+    href: `#FeatureSec`,
   },
   {
     label: `Future Plans`,
-    href: `/`,
+    href: `#CaseSec`,
   },
 ];
 
@@ -85,13 +89,11 @@ const MobileMenu = () => (
     <div className={tw(`pt-4 pb-3 border-t border-gray-400`)}>
       <div className={tw(`px-2 space-y-1`)}>
         {secondaryLinks.map((link: Link) => (
-          <a
-            key={`mobile-${link.label}`}
-            href={link.href}
-            className={tw(`block px-3 py-2 text-base font-medium text-gray-500`)}
-          >
-            {link.label}
-          </a>
+          <Button primary>
+            <a key={`mobile-${link.label}`} href={link.href} className={tw(`block px-3 py-2 text-base font-medium`)}>
+              {link.label}
+            </a>
+          </Button>
         ))}
       </div>
     </div>
@@ -103,12 +105,14 @@ const Navigation = () => {
   const toggleMenu = () => setShowMenu(!showMenu);
 
   return (
-    <nav className={tw(`bg-white sticky top-0 z-10`)}>
-      <div className={tw(`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8`)}>
+    <nav className={tw(`sticky top-0 z-30`)}>
+      <div className={tw(`bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 shadow-xl`)}>
         <div className={tw(`flex items-center justify-between h-24`)}>
           <div className={tw(`flex items-center`)}>
             <div className={tw(`flex-shrink-0`)}>
-              <img className={tw(`h-12 w-12`)} src="logo.svg" alt="logo" width={48} height={48} />
+              <a href="#top">
+                <img className={tw(`h-12 w-12`)} src="logo.svg" alt="logo" width={48} height={48} />
+              </a>
             </div>
             <div className={tw(`hidden md:block`)}>
               <div className={tw(`ml-10 flex items-baseline space-x-4`)}>

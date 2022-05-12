@@ -20,7 +20,7 @@ const articles = [
 ];
 
 const CasesSection = () => (
-  <section>
+  <section id="CaseSec">
     <div className={tw(`w-full min-h-screen bg-gray-900 relative`)}>
       <div className={tw(`absolute left-0 top-0 h-screen w-full overflow-hidden`)} />
       <div className={tw(`max-w-7xl mx-4 lg:mx-auto pt-20 lg:pt-40`)}>
@@ -59,7 +59,7 @@ const CasesSection = () => (
                 text-indigo-400 cursor-pointer z-30 hover:text-indigo-600`,
               )}
             >
-              See all case studies
+              <a href="/"> See all case studies </a>
               <Arrow className={tw(`h-6 w-6 fill-current ml-2`)} />
             </span>
           </div>
