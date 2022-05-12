@@ -8,26 +8,28 @@ import Typed from 'typed.js';
 import React from 'react';
 
 const headerStyle = css`
-  background-color: #ffffff;
+  background-color: white;
   min-height: calc(80vh - 6rem);
 `;
 
 const Header = () => {
-  const el = React.useRef(null);
-  const typed = React.useRef(null);
+  const el = React.useRef() as React.MutableRefObject<HTMLSpanElement>;
+  const typed = React.useRef<Typed>();
 
   React.useEffect(() => {
     const options = {
       strings: [`Rights`, `Opinion`, `Voice`],
       typeSpeed: 90,
-      backSpeed: 60,
+      backSpeed: 40,
       backDelay: 750,
+      startDelay: 200,
       loop: true,
     };
     typed.current = new Typed(el.current, options);
 
     return () => {
-      typed.current.destroy();
+      const typedItem = typed.current;
+      typedItem?.destroy();
     };
   }, []);
 
