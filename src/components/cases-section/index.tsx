@@ -1,32 +1,34 @@
 import { tw } from 'twind';
-import Arrow from '@/constants/svg/arrow.svg';
 
 const articles = [
   {
-    title: `Velit reprehenderit culpa Lorem reprehenderit excepteur ipsum esse.`,
-    image: `/images/case-1.webp`,
+    title: `Celebrate Holidays!`,
+    description: `Halloween Party, Trick or Treat, Christmas Cookie Sale`,
+    image: `/images/1event.jpeg`,
     alt: `Proident pariatur est.`,
   },
   {
-    title: `Velit reprehenderit culpa Lorem reprehenderit ipsum esse.`,
-    image: `/images/case-2.webp`,
+    title: `Seasonal Large-Scale Events!`,
+    description: `Winter Gala, Easter Egg Hunt, Spirit Week, Game Night`,
+    image: `/images/2event.jpeg`,
     alt: `Proident pariatur est.`,
   },
   {
-    title: `Velit reprehenderit culpa Lorem reprehenderit excepteur esse.`,
-    image: `/images/case-3.webp`,
+    title: `Educational Opportunities!`,
+    description: `AP Sharing, Alumni Sharing`,
+    image: `/images/3event.jpg`,
     alt: `Proident pariatur est.`,
   },
 ];
 
 const CasesSection = () => (
-  <section id="CaseSec">
+  <section>
     <div className={tw(`w-full min-h-screen bg-gray-900 relative`)}>
       <div className={tw(`absolute left-0 top-0 h-screen w-full overflow-hidden`)} />
       <div className={tw(`max-w-7xl mx-4 lg:mx-auto pt-20 lg:pt-40`)}>
-        <h1 className={tw(`text-white text-4xl lg:text-7xl font-bold text-center`)}>What will we build?</h1>
+        <h1 className={tw(`text-white text-4xl lg:text-7xl font-bold text-center`)}>Missed out on past events?</h1>
         <p className={tw(`text-white text-gray-400 text-center text-xl mt-12`)}>
-          Potential projects for student council.
+          We are hosting it again and adding new ones!
         </p>
         <div className={tw(`mx-auto pt-24`)}>
           <div className={tw(`w-full flex flex-wrap justify-around`)}>
@@ -48,20 +50,11 @@ const CasesSection = () => (
                   />
                 </div>
                 <div className={tw(`p-4 shadow-lg w-full mx-auto -mt-8 bg-white rounded-b z-30 relative`)}>
-                  <p className={tw(`uppercase text-sm text-gray-700 text-center pb-1`)}>Case study</p>
-                  <p className={tw(`text-gray-500 text-center pb-1 text-sm`)}>{article.title}</p>
+                  <p className={tw(`uppercase text-sm font-bold text-gray-700 text-center pb-1`)}>{article.title}</p>
+                  <p className={tw(`text-gray-500 text-center pb-1 text-sm`)}>{article.description}</p>
                 </div>
               </div>
             ))}
-            <span
-              className={tw(
-                `-mt-8 pb-12 lg:mt-4 flex items-center text-xl
-                text-indigo-400 cursor-pointer z-30 hover:text-indigo-600`,
-              )}
-            >
-              <a href="/"> See all case studies </a>
-              <Arrow className={tw(`h-6 w-6 fill-current ml-2`)} />
-            </span>
           </div>
         </div>
       </div>

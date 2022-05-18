@@ -34,7 +34,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en">
+      <Html lang="en" className="scroll-smooth" style={{ scrollBehavior: `smooth` }}>
         <Head>
           <script async src="https://scripts.simpleanalyticscdn.com/latest.js" />
         </Head>

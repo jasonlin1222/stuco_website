@@ -15,19 +15,15 @@ type Link = {
 const links = [
   {
     label: `Introduction`,
-    href: `#VideoSec`,
+    href: `/#VideoSec`,
   },
   {
     label: `Why Us?`,
-    href: `#ListSec`,
-  },
-  {
-    label: `Policies`,
-    href: `#FeatureSec`,
+    href: `/#ListSec`,
   },
   {
     label: `Future Plans`,
-    href: `#CaseSec`,
+    href: `/#FeatureSec`,
   },
 ];
 
@@ -105,13 +101,13 @@ const Navigation = () => {
   const toggleMenu = () => setShowMenu(!showMenu);
 
   return (
-    <nav className={tw(`sticky top-0 z-30`)}>
-      <div className={tw(`bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 shadow-xl`)}>
+    <nav className={tw(`sticky top-0 z-30 bg-transparent`)}>
+      <div className={tw(`bg-l-blue max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 shadow-2xl shadow-gray-100`)}>
         <div className={tw(`flex items-center justify-between h-24`)}>
           <div className={tw(`flex items-center`)}>
             <div className={tw(`flex-shrink-0`)}>
-              <a href="#top">
-                <img className={tw(`h-12 w-12`)} src="logo.svg" alt="logo" width={48} height={48} />
+              <a href="/#top">
+                <img className={tw(`h-30 w-30`)} src="stucologo.svg" alt="logo" width={130} height={130} />
               </a>
             </div>
             <div className={tw(`hidden md:block`)}>
@@ -120,7 +116,7 @@ const Navigation = () => {
                   <a
                     key={link.label}
                     href={link.href}
-                    className={tw(`text-gray-500 hover:text-gray-600 px-3 py-2 rounded-md font-medium`)}
+                    className={tw(`text-white hover:text-gray-300 px-3 py-2 rounded-md font-medium`)}
                   >
                     {link.label}
                   </a>
@@ -130,7 +126,9 @@ const Navigation = () => {
           </div>
           <div className={tw(`hidden md:block`)}>
             <div className={tw(`ml-4 flex items-center md:ml-6`)}>
-              <Button primary>Join the Discussion</Button>
+              <a href="/forum">
+                <Button primary>Join the Discussion</Button>
+              </a>
             </div>
           </div>
           <div className={tw(`-mr-2 flex md:hidden`)}>
