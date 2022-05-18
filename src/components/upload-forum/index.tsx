@@ -43,7 +43,7 @@ function Uploadforum() {
             onChange={(e) => setDescription(e.target.value)}
           />
           <button type="button" onClick={() => sendData()}>
-            Submit Question
+            Submit
           </button>
         </form>
       </div>
