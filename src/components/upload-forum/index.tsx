@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { createQuestion } from '@/pages/api';
-// eslint-disable-next-line import/no-unresolved
-import Link from 'next/Link';
+import Link from 'next/link';
 import Router from 'next/router';
 import style from '../../styles/Home.module.css';
 
