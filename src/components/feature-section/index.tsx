@@ -14,7 +14,7 @@ const FeatureSection = () => (
           <div className={tw(`w-full border-b md:w-1/2 md:border-r p-8`)}>
             <div className={tw(`flex items-center mb-6`)}>
               <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-300`)} />
-              <div className={tw(`ml-4 text-xl text-white`)}>Relax Uniform Regulations</div>
+              <div className={tw(`ml-4 text-2xl text-white`)}>Relax Uniform Regulations</div>
             </div>
             <p className={tw(`leading-loose text-gray-300`)}>
               <ul>
@@ -26,7 +26,7 @@ const FeatureSection = () => (
           <div className={tw(`w-full border-b md:w-1/2 p-8`)}>
             <div className={tw(`flex items-center mb-6`)}>
               <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-300`)} />
-              <div className={tw(`ml-4 text-xl text-white`)}>Accessible College Resources</div>
+              <div className={tw(`ml-4 text-2xl text-white`)}>Accessible College Resources</div>
             </div>
             <p className={tw(`leading-loose text-gray-300`)}>
               <ul>
@@ -41,7 +41,7 @@ const FeatureSection = () => (
           <div className={tw(`w-full border-b md:w-1/2 md:border-r p-8`)}>
             <div className="flex items-center mb-6">
               <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-300`)} />
-              <div className={tw(`ml-4 text-xl text-white`)}>Book-Sharing</div>
+              <div className={tw(`ml-4 text-2xl text-white`)}>Book-Sharing</div>
             </div>
             <p className={tw(`leading-loose text-gray-300`)}>
               <ul>
@@ -53,7 +53,7 @@ const FeatureSection = () => (
           <div className={tw(`w-full border-b md:w-1/2 p-8`)}>
             <div className={tw(`flex items-center mb-6`)}>
               <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-300`)} />
-              <div className={tw(`ml-4 text-xl text-white`)}>Increase transparency</div>
+              <div className={tw(`ml-4 text-2xl text-white`)}>Increase transparency</div>
             </div>
             <p className={tw(`leading-loose text-gray-300`)}>
               <ul>
@@ -65,7 +65,7 @@ const FeatureSection = () => (
           <div className={tw(`w-full border-b md:w-1/2 md:border-r p-8`)}>
             <div className={tw(`flex items-center mb-6`)}>
               <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-300`)} />
-              <div className={tw(`ml-4 text-xl text-white`)}>Club Collaborations</div>
+              <div className={tw(`ml-4 text-2xl text-white`)}>Club Collaborations</div>
             </div>
             <p className={tw(`leading-loose text-gray-300`)}>
               <ul>
@@ -77,7 +77,7 @@ const FeatureSection = () => (
           <div className={tw(`w-full border-b md:w-1/2 p-8`)}>
             <div className={tw(`flex items-center mb-6`)}>
               <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-300`)} />
-              <div className={tw(`ml-4 text-xl text-white`)}>Digitalization for Convenience</div>
+              <div className={tw(`ml-4 text-2xl text-white`)}>Digitalization for Convenience</div>
             </div>
             <p className={tw(`leading-loose text-gray-300`)}>
               <ul>
@@ -88,7 +88,7 @@ const FeatureSection = () => (
           <div className={tw(`w-full border-b md:w-1/2 md:border-r p-8`)}>
             <div className={tw(`flex items-center mb-6`)}>
               <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-300`)} />
-              <div className={tw(`ml-4 text-xl text-white`)}>Flexible Breakfast Time</div>
+              <div className={tw(`ml-4 text-2xl text-white`)}>Flexible Breakfast Time</div>
             </div>
             <p className={tw(`leading-loose text-gray-300`)}>
               <ul>
@@ -100,7 +100,7 @@ const FeatureSection = () => (
           <div className={tw(`w-full border-b md:w-1/2 p-8`)}>
             <div className={tw(`flex items-center mb-6`)}>
               <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-300`)} />
-              <div className={tw(`ml-4 text-xl text-white`)}>Reasonable Electronic Use</div>
+              <div className={tw(`ml-4 text-2xl text-white`)}>Reasonable Electronic Use</div>
             </div>
             <p className={tw(`leading-loose text-gray-300`)}>
               <ul>
@@ -116,7 +116,7 @@ const FeatureSection = () => (
           <div className={tw(`w-full md:w-1/2 border-b md:border-r md:border-b-0 p-8`)}>
             <div className={tw(`flex items-center mb-6`)}>
               <Check width={20} height={20} fill="currentColor" className={tw(`h-6 w-6 text-indigo-300`)} />
-              <div className={tw(`ml-4 text-xl text-white`)}>Establishing Bilingual Bell</div>
+              <div className={tw(`ml-4 text-2xl text-white`)}>Establishing Bilingual Bell</div>
             </div>
             <p className={tw(`leading-loose text-gray-300`)}>
               <ul>
@@ -129,7 +129,7 @@ const FeatureSection = () => (
             </p>
           </div>
           <div className={tw(`w-full md:w-1/2 p-8`)}>
-            <div className={tw(`flex items-center justify-center text-2xl p-4 text-white`)}>Want Something Else?</div>
+            <div className={tw(`flex items-center justify-center text-3xl p-4 text-white`)}>Want Something Else?</div>
             <div className={tw(`flex items-center justify-center`)}>
               <a href="/forum">
                 <Button>
