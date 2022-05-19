@@ -33,7 +33,7 @@ const FeatureSection = () => (
                 <li>➤ Create platform to book sessions with teachers to discuss college application</li>
                 <li>
                   ➤ Create senior profile of college applications from Fuhsing students who got into top schools for
-                  YOUR reference
+                  YOUR reference (with their permission)
                 </li>
               </ul>
             </p>

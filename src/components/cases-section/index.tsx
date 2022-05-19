@@ -5,19 +5,19 @@ const articles = [
     title: `Celebrate Holidays!`,
     description: `Halloween Party, Trick or Treat, Christmas Cookie Sale`,
     image: `/images/1event.jpeg`,
-    alt: `Proident pariatur est.`,
+    alt: `1st`,
   },
   {
     title: `Seasonal Large-Scale Events!`,
     description: `Winter Gala, Easter Egg Hunt, Spirit Week, Game Night`,
     image: `/images/2event.jpeg`,
-    alt: `Proident pariatur est.`,
+    alt: `2nd`,
   },
   {
     title: `Educational Opportunities!`,
     description: `AP Sharing, Alumni Sharing`,
     image: `/images/3event.jpg`,
-    alt: `Proident pariatur est.`,
+    alt: `3rd`,
   },
 ];
 
@@ -37,10 +37,10 @@ const CasesSection = () => (
                 key={article.title}
                 className={tw(
                   `xl:w-1/3 sm:w-5/12 sm:max-w-xs relative mb-32 lg:mb-20
-                      xl:max-w-sm lg:w-1/2 w-11/12 mx-auto sm:mx-0 cursor-pointer hover:scale-105`,
+                      xl:max-w-sm lg:w-1/2 w-11/12 mx-auto sm:mx-0 cursor-pointer z-0 scale-95 hover:scale-105`,
                 )}
               >
-                <div className={tw(`h-64 z-20`)}>
+                <div className={tw(`h-64 z-10`)}>
                   <img
                     src={article.image}
                     alt={article.alt}
@@ -49,7 +49,7 @@ const CasesSection = () => (
                     height={300}
                   />
                 </div>
-                <div className={tw(`p-4 shadow-lg w-full mx-auto -mt-8 bg-white rounded-b z-30 relative`)}>
+                <div className={tw(`p-4 shadow-lg w-full mx-auto -mt-8 bg-white rounded-b z-20 relative`)}>
                   <p className={tw(`uppercase text-sm font-bold text-gray-700 text-center pb-1`)}>{article.title}</p>
                   <p className={tw(`text-gray-500 text-center pb-1 text-sm`)}>{article.description}</p>
                 </div>

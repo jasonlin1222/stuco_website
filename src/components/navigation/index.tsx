@@ -101,7 +101,7 @@ const Navigation = () => {
   const toggleMenu = () => setShowMenu(!showMenu);
 
   return (
-    <nav className={tw(`sticky top-0 z-30 bg-transparent`)}>
+    <nav className={tw(`sticky top-0 z-40 bg-transparent`)}>
       <div className={tw(`bg-l-blue max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 shadow-2xl shadow-gray-100`)}>
         <div className={tw(`flex items-center justify-between h-24`)}>
           <div className={tw(`flex items-center`)}>
