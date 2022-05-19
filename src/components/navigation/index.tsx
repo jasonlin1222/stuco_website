@@ -74,10 +74,10 @@ const MenuButton = ({ toggleMenu, showMenu }: IMenuButton) => (
 );
 
 const MobileMenu = () => (
-  <div className={tw(`md:hidden`)}>
+  <div className={tw(`md:hidden bg-l-blue shadow-xl`)}>
     <div className={tw(`px-2 pt-2 pb-3 space-y-1 sm:px-3`)}>
       {links.map((link: Link) => (
-        <a href={link.href} className={tw(`text-gray-500 block px-3 py-2 text-base font-medium`)} key={link.label}>
+        <a href={link.href} className={tw(`text-white block px-3 py-2 text-base font-medium`)} key={link.label}>
           {link.label}
         </a>
       ))}

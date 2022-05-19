@@ -27,8 +27,14 @@ const Header = () => {
   return (
     <header className={tw(`bg-bg-color`)}>
       <div className={tw(`max-w-6xl mx-auto py-16 px-14 sm:px-6 lg:px-8`)}>
-        <h1 className={tw(`font-sans text-6xl md:text-6xl lg:text-8xl text-center text-white`)}>
+        <h1 className={tw(`font-sans text-6xl md:text-6xl lg:text-8xl text-center text-white hidden md:block`)}>
           We <span className={tw(`subpixel-antialiased`)} ref={el} />
+        </h1>
+        <h1 className={tw(`font-sans text-6xl md:text-6xl lg:text-8xl text-center text-white md:hidden`)}>
+          We Fight For{` `}
+          <b>
+            <i>Change</i>
+          </b>
         </h1>
         <div className={tw(`max-w-xl mx-auto`)}>
           <p className={tw(`mt-10 text-gray-300 text-center text-xl lg:text-3xl`)}>
