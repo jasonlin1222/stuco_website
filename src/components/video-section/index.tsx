@@ -29,9 +29,17 @@ const VideoSection = () => (
       <div className={tw(`flex flex-col max-w-4xl mx-auto pt-28`)}>
         <div className={tw(`w-full`)}>
           <div className={tw(`relative shadow-2xl mx-6 lg:mx-0`)}>
-            <div className={tw(`relative mx-auto w-100 h-80 bg-d-blue opacity-80 rounded-lg p-10`)}>
-              <p className={tw(`flex justify-center text-white text-5xl`)}>Video Coming Soon!</p>
-              <Countdown date={Date.parse(`26 May 2022 00:00:00 GMT+8`)} renderer={renderer} />
+            <div className={tw(`relative mx-auto w-100 h-screen bg-d-blue opacity-80 rounded-lg p-10`)}>
+              {/* <p className={tw(`flex justify-center text-white text-5xl`)}>Video Coming Soon!</p> */}
+              <iframe
+                className={tw(`relative mx-auto w-full h-full`)}
+                src="https://www.youtube.com/embed/ZgP5kGvuOsc"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                title="Video"
+              />
+              {/* <Countdown date={Date.parse(`26 May 2022 00:00:00 GMT+8`)} renderer={renderer} /> */}
             </div>
           </div>
         </div>
